@@ -11,7 +11,7 @@
  - #84FFFF
  - #B0BEC5
  - #FF5252
- - #FFD740
+ - #84FFFF
  ### neutral
 
 ## typography

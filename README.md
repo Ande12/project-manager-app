@@ -2,7 +2,7 @@
 An application that a project manger of a company will use to set up all projects of the company as well as follow them up
 
 Pages: Login, home, project details
-login, registration, reset account, forgot password
+login, registration, reset password, forgot password
 
 # functional specification
  - authentification
