@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in page</title>
+    <title>sign up page</title>
     <link rel="stylesheet" href="../css/login/login.css">
 </head>
 <body>
     <section class="container">
         <div class="form-container">
             <form action="" method="post">
-                <h1>Log in</h1>
-                <!-- <div class="form-group">
-                    <input type="text" placeholder="Log in with Google">
-                </div> -->
+                <h1>Sign up</h1>
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" minlength="6">
+                </div>
                 <div class="form-group">
                     <label for="">Email</label>
                     <input type="email" class="form-control" minlength="6">
@@ -24,12 +25,10 @@
                     <input type="password" class="form-control" minlength="6" >
                 </div>
                 <input type="checkbox" name="" id="">
-                <label for="">Remember me?</label>
-                <a class="button-link" href="../index.html">Log in</a>
-                <button class="form-links" id="fg-pass"><a href="forgotPassword.html">Forgot Password?</a></button>
-                <hr>
-                <p id="quest">Don't have an account?</p>
-                <button class="form-links"><a href="./signUp.html">Sign up</a></button>
+                <label for="">I agree with <span ><a class="special-links"  href="">Terms</a></span> and <span><a class="special-links href="">Privacy</a></span></label>
+                <a class="button-link" href="../index.html">Sign up</a>
+                <p id="quest">Already have an account?</p>
+                <button class="form-links"><a href="login.html">Log in</a></button>
             </form>
         </div>
     </section>
