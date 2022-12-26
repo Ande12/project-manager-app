@@ -4,50 +4,71 @@ section{
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     background-color: #82dbef9a;
 
     .form-container{
-        width: 400px;
+        width: 500px;
+        max-width: 90%;
+        margin: auto;
         form{
-            height: 400px;
-            box-shadow: 1px 0px 10px 2px rgba(0,0,0,0.2);
+            height: 500px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
             padding: 50px 35px;
             background-color: white;
+            backdrop-filter: blur(10px);
 
             .form-group{
                 margin: 8px 0px;
+                
                 input{
                     width: 100%;
                     height: 40px;
                     border-radius: 3px ;
-                    border: 1px solid;
+                    // border: 1px solid #000;
                     outline: none;
                     padding: 0 10px;
-                    margin-bottom: 10px;
-                 &:focus{
-                    border: 2px solid #1b8e92;
+                    margin: 10px 0;
+                //  &:focus{
+                //     border: 1px solid #000;
+                // }
+                &:invalid{
+                    border: 1px solid red;
+                }
+                &:valid{
+                    border: 1px solid #1b8e92;
                 }
             }
                 label{
                     font-size: 18px;
-                    color: #006064;
+                    color: #000;
+                    font-weight: bold;
                 }
+            }
+            #fg-pass{
+                padding: 20px 0;
+            }
+            #quest{
+                text-align: center;
+                margin-top: 20px;
+                font-size: 16px;
             }
             .form-links{
                 display: flex;
                 flex-direction: column;
                 border: none;
                 outline: none;
-                margin: 8px 0;
+                margin: auto;
+                padding-top: 5px;
                 background-color: white;
 
                 a{
                     text-decoration: none;
                     color: #1b8e92;
                     font-size: 15px;
+                    text-align: center;
                 
                 &:hover{
                     text-decoration: underline;
@@ -56,11 +77,12 @@ section{
             }
             .sign-in{
                 padding: 10px 40px;
-                margin: 10px 30%;
+                margin: 10px 0;
                 border: none;
                 outline: none;
                 border-radius: 20px;
                 background-color: #307a7d;
+                width: 100%;
 
                 a{
                     text-decoration: none; 

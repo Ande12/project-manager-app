@@ -11,17 +11,25 @@
     <section class="container">
         <div class="form-container">
             <form action="" method="post">
+                <h1>Log in</h1>
+                <!-- <div class="form-group">
+                    <input type="text" placeholder="Log in with Google">
+                </div> -->
                 <div class="form-group">
-                    <label for="">Username</label>
-                    <input type="text">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" minlength="6">
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="text">
+                    <input type="password" class="form-control" minlength="6" >
                 </div>
-                <button class="form-links"><a href="">Forgot password?</a></button>
-                <button class="form-links"><a href="">create account</a></button>
-                <button class="sign-in"><a href="">signin</a></button>
+                <input type="checkbox" name="" id="">
+                <label for="">Remember me</label>
+                <button class="sign-in"><a href="">Sign in</a></button>
+                <button class="form-links" id="fg-pass"><a href="">Forgot Password?</a></button>
+                <hr>
+                <p id="quest">Don't have an account?</p>
+                <button class="form-links"><a href="">Sign up</a></button>
             </form>
         </div>
     </section>
