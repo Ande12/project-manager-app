@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in page</title>
     <link rel="stylesheet" href="../css/login/login.css">
+    <script src="https://kit.fontawesome.com/70af51efa9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="container">
         <div class="form-container">
             <form action="" method="post">
+                <i class="fa-solid fa-user"></i>
                 <h1>Log in</h1>
                 <!-- <div class="form-group">
                     <input type="text" placeholder="Log in with Google">
                 </div> -->
+                <!-- <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i> -->
                 <div class="form-group">
                     <label for="">Email</label>
                     <input type="email" class="form-control" minlength="6">
                 </div>
                 <div class="form-group">
+                    <i class="fa-solid fa-lock"></i>
                     <label for="">Password</label>
-                    <input type="password" class="form-control" minlength="6" >
+                    <input type="password" class="form-control" minlength="6" id="password-field" >
                 </div>
-                <input type="checkbox" name="" id="">
-                <label for="">Remember me?</label>
+                <input type="checkbox" name="" id="checkbox-data">
+                <label for="">Show password</label>
+                <script src="../jS/login.js"></script>
                 <a class="button-link" href="../index.html">Log in</a>
                 <button class="form-links" id="fg-pass"><a href="forgotPassword.html">Forgot Password?</a></button>
                 <hr>
