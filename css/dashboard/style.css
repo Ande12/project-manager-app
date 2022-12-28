@@ -150,4 +150,11 @@ body .app-container .main-dashboard .functionalities .light-mode .left-part {
 }
 .time-board .calendar-proper ul li {
   text-align: center;
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+.time-board .calendar-proper ul li:hover {
+  background-color: #ccc;
 }/*# sourceMappingURL=style.css.map */
