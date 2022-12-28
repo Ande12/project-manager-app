@@ -1,0 +1,42 @@
+
+        .time-board{
+            width: 30%;
+            background-color: #fff;
+            border-radius:0px  30px 30px 0;               
+            padding: 20px;
+
+            .info-section{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                
+                .notifications{
+                    button{
+                        padding: 5px 10px 0px 0px;
+                        background-color: #fff;
+                        border: none;
+                        outline: none;
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+
+                }
+                .admin-info{
+                    display: flex;
+                    .admin-name{
+                        padding: 5px 10px 0px 0px;
+                    }
+                    .profile{
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        img{
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+            }
+        }

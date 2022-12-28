@@ -16,12 +16,6 @@ body .app-container {
   flex-direction: row;
   margin-top: 3%;
   border-radius: 30px;
-  border: 1px solid red;
-}
-body .app-container .time-board {
-  width: 30%;
-  background-color: #fff;
-  border-radius: 0px 30px 30px 0px;
 }
 body .app-container .main-dashboard {
   width: 70%;
@@ -35,9 +29,6 @@ body .app-container .main-dashboard .functionalities {
   flex-direction: row;
   justify-content: space-between;
   padding-right: 50px;
-}
-body .app-container .main-dashboard .functionalities .search {
-  border: 1px solid red;
 }
 body .app-container .main-dashboard .functionalities .search input {
   padding: 9px 60px;
@@ -58,7 +49,6 @@ body .app-container .main-dashboard .functionalities ul {
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
-  border: 1px solid red;
   padding-left: 80px;
 }
 body .app-container .main-dashboard .functionalities ul li {
@@ -95,4 +85,41 @@ body .app-container .main-dashboard .functionalities .light-mode .right-part {
 body .app-container .main-dashboard .functionalities .light-mode .left-part {
   background-color: #fff;
   border-radius: 40px 0px 0px 40px;
+}
+
+.time-board {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 0px 30px 30px 0;
+  padding: 20px;
+}
+.time-board .info-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.time-board .info-section .notifications button {
+  padding: 5px 10px 0px 0px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+.time-board .info-section .notifications button i {
+  font-size: 18px;
+}
+.time-board .info-section .admin-info {
+  display: flex;
+}
+.time-board .info-section .admin-info .admin-name {
+  padding: 5px 10px 0px 0px;
+}
+.time-board .info-section .admin-info .profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+.time-board .info-section .admin-info .profile img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
