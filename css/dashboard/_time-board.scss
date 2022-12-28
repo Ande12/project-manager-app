@@ -18,6 +18,7 @@
                         outline: none;
                         i{
                             font-size: 18px;
+                            color: #307a7d;
                         }
                     }
 
@@ -38,5 +39,36 @@
                         }
                     }
                 }
+            }
+            .day-detail{
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 18px;
+                }
+                button{
+                    padding: 5px 10px 5px 10px;
+                    background-color: #fff;
+                    border: none;
+                    outline: none;
+                    &:hover{
+                        background-color: #ccc;
+                    }
+
+                }
+            }
+ 
+            .calendar-proper{
+                display: flex;
+                justify-content: space-between;
+                
+                ul{
+                    list-style-type: none;
+                    li{
+                        text-align: center;
+                       }
+                }
+
             }
         }

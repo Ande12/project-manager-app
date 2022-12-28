@@ -106,6 +106,7 @@ body .app-container .main-dashboard .functionalities .light-mode .left-part {
 }
 .time-board .info-section .notifications button i {
   font-size: 18px;
+  color: #307a7d;
 }
 .time-board .info-section .admin-info {
   display: flex;
@@ -122,4 +123,31 @@ body .app-container .main-dashboard .functionalities .light-mode .left-part {
   height: 50px;
   width: 50px;
   border-radius: 50px;
+}
+.time-board .day-detail {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.time-board .day-detail p {
+  font-size: 18px;
+}
+.time-board .day-detail button {
+  padding: 5px 10px 5px 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+.time-board .day-detail button:hover {
+  background-color: #ccc;
+}
+.time-board .calendar-proper {
+  display: flex;
+  justify-content: space-between;
+}
+.time-board .calendar-proper ul {
+  list-style-type: none;
+}
+.time-board .calendar-proper ul li {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
