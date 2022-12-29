@@ -24,6 +24,27 @@ body .app-container .main-dashboard {
   padding-top: 20px;
   padding-left: 40px;
 }
+body .app-container .main-dashboard .service-section {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
+}
+body .app-container .main-dashboard .service-menu-bar {
+  display: inline-block;
+  padding: 12px 0px;
+}
+body .app-container .main-dashboard .service-menu-bar a {
+  text-decoration: none;
+  color: grey;
+  padding: 10px 35px 10px 0px;
+  font-weight: bold;
+  font-size: 16px;
+}
+body .app-container .main-dashboard .service-menu-bar a:hover {
+  border-bottom: 1px solid #307a7d;
+  border-bottom-width: 3px;
+  color: #307a7d;
+}
 body .app-container .main-dashboard .functionalities {
   display: flex;
   flex-direction: row;
