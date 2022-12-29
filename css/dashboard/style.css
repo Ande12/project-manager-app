@@ -14,7 +14,7 @@ body .app-container {
   margin: auto;
   display: flex;
   flex-direction: row;
-  margin-top: 3%;
+  margin: 2% auto;
   border-radius: 30px;
 }
 body .app-container .main-dashboard {
@@ -29,9 +29,16 @@ body .app-container .main-dashboard .service-section {
   justify-content: space-between;
   padding-right: 70px;
 }
+body .app-container .main-dashboard .service-features {
+  display: flex;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics {
+  display: flex;
+}
 body .app-container .main-dashboard .service-menu-bar {
   display: inline-block;
-  padding: 12px 0px;
+  padding: 10px 0px;
+  margin-bottom: 5px;
 }
 body .app-container .main-dashboard .service-menu-bar a {
   text-decoration: none;
