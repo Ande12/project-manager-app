@@ -6,12 +6,7 @@
 
 ## colors
  ### primary
- - #A7FFEB
- - #006064
- - #84FFFF
- - #B0BEC5
- - #FF5252
- - #84FFFF
+ - #FF5252- funny red
  ### neutral
 
 ## typography

@@ -11,18 +11,31 @@ body {
 }
 body .app-container {
   max-width: 92%;
-  margin: auto;
+  height: 98%;
   display: flex;
   flex-direction: row;
-  margin: 2% auto;
+  margin: 2% auto 2% auto;
   border-radius: 30px;
 }
 body .app-container .main-dashboard {
   width: 70%;
   background-color: rgba(238, 246, 248, 0.7215686275);
   border-radius: 30px 0px 0px 30px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 40px;
+  padding-bottom: 30px;
+  border: 1px solid red;
+}
+body .app-container .main-dashboard .current-projects {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+body .app-container .main-dashboard .current-projects .booking-one, body .app-container .main-dashboard .current-projects .booking-two {
+  padding: 20px 0px 0px 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 350px;
 }
 body .app-container .main-dashboard .service-section {
   display: flex;
@@ -31,9 +44,161 @@ body .app-container .main-dashboard .service-section {
 }
 body .app-container .main-dashboard .service-features {
   display: flex;
+  flex: wrap;
+  width: 100%;
+  height: 300px;
+  flex-direction: row;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px 0px;
+  padding-right: 30px;
+}
+body .app-container .main-dashboard .service-features .service-feature-three {
+  border-radius: 30px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .meetings {
+  background-color: #307a7d;
+  border-radius: 30px;
+  width: 200px;
+  height: 110px;
+  margin-top: 20px;
+  padding: 16px;
+  color: #fff;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .meetings .meeting-images {
+  display: flex;
+  justify-content: space-between;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .meetings .meeting-images .left-meet-img img {
+  height: 40px;
+  width: 40px;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .meetings .meeting-images .left-meet-img .num-btn {
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .meetings .meeting-images .right-meet-img button {
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .todays-activities {
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 18px;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .todays-activities .earnings h5 {
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+body .app-container .main-dashboard .service-features .service-feature-three .todays-activities .earnings h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+body .app-container .main-dashboard .service-features .service-feature-two {
+  width: 220px;
+  height: 100%;
+  border-radius: 30px;
+  background-image: url("/images/building.png");
+  background-size: 395px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .app-container .main-dashboard .service-features .service-feature-one {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  border-radius: 30px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount {
+  display: flex;
+  padding: 20px 0px 0px 15px;
+  background-color: #307a7d;
+  border-radius: 30px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-text {
+  color: #fff;
+  padding-right: 6px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-text h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-text h5 {
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-text button {
+  padding: 5px 10px;
+  background-color: #307a7d;
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 30px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-text p {
+  font-size: 15px;
+  padding-top: 8px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 30px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .discount .discount-img img {
+  width: 130px;
+  height: 130px;
 }
 body .app-container .main-dashboard .service-features .service-feature-one .statistics {
   display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: space-between;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics .earnings {
+  height: 100px;
+  width: 130px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 18px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics .earnings h5 {
+  color: grey;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics .earnings h4 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics .demographics {
+  height: 100px;
+  width: 130px;
+  background-color: #f7c72b;
+  border-radius: 20px;
+  padding: 18px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics .demographics h5 {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+body .app-container .main-dashboard .service-features .service-feature-one .statistics .demographics h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
 }
 body .app-container .main-dashboard .service-menu-bar {
   display: inline-block;
