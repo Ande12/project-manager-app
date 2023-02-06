@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
+
+// variables
+$primary-color: #7380ec;
+$danger-color: #ff7782;
+$sucess-color: #41f1b6;
+$warning-color: #ffbb55;
+$white-color: #fff;
+$info-dark-color: #7d8da1;
+$info-dark-lighrt: #dce1eb;
+$dark-color: #363949;
+$light-color: rgba(132, 139, 200, 0.18);
+$primary-variant-color: #111e88;
+$background-color: #f6f6f9;
+$dark-variant-color: #677483;
+
+$card-border-radius: 32px;
+$border-radius-1: 6px;
+$border-radius-2: 13px;
+$border-radius-3: 19px;
+
+$card-padding: 32px;
+$padding-1: 19px;
+$box-shadow: 0 32px 48px $light-color;
+
+
+// dark mode variables
+
+.dark-theme-variables{
+    $background-color: #181a1e;
+    $white-color: #202528;
+    $dark-color: #edeffd;
+    $dark-variant-color:#a3bdcc;
+    $light-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 32px 48px $light-color;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: $dark-color;
+}
+span svg{
+    width: 22px;
+    height: 22px;
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1{
+    font-weight: 800;
+    font-size: 29px;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 13.9px;
+}
+h4{
+    font-size: 12.8px;
+}
+h5{
+    font-size: 12.3px;
+}
+small{
+    font-size: 12px;
+}
+.profile-pic{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.muted-text{
+    color: $info-dark-color;
+}
+p{
+    color: $dark-variant-color;
+}
+b{
+    color: $dark-color;
+}
+.primary{
+    color: $primary-color;
+}
+.danger{
+    color: $danger-color;
+}
+.success{
+    color: $sucess-color;
+}
+.warning{
+    color: $warning-color;
+}
+
+

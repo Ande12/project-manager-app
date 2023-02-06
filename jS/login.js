@@ -1,11 +1,12 @@
-let passwordField = document.querySelector('#password-field');
-let checkboxData = document.querySelector('#checkbox-data');
+const container = document.querySelector('.log-container');
+const signInBtn = document.querySelector('#sign-in-btn');
+const signUpBtn = document.querySelector('#sign-up-btn');
 
-checkboxData.addEventListener('click', function typeChanger(event){
-    passwordField.classList.toggle('show');
-    if(passwordField.classList.contains('show')){
-        passwordField.type = 'text';
-    }else{
-        passwordField.type = 'password';
-    }
+// switch buttons
+signUpBtn.addEventListener('click', () => {
+    container.classList.add('sign-up-mode');
+})
+// switch buttons
+signInBtn.addEventListener('click', () => {
+    container.classList.remove('sign-up-mode');
 })

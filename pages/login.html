@@ -4,43 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in page</title>
-    <link rel="stylesheet" href="../css/login/login.css">
+    <title>signing</title>
     <script src="https://kit.fontawesome.com/70af51efa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <section class="container">
+    <Section class="log-container">
         <div class="form-container">
-            <form action="" method="post">
-                <i class="fa-solid fa-user"></i>
-                <h1>Log in</h1>
-                <!-- <div class="form-group">
-                    <input type="text" placeholder="Log in with Google">
-                </div> -->
-                <!-- <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i> -->
-                <div class="form-group">
-                    <i class="fa-solid fa-envelope"></i>
-                    <label for="">Email</label>
-                    <input type="email" class="form-control" minlength="6" required>
-                </div>
-                <div class="form-group">
-                    <i class="fa-solid fa-lock"></i>
-                    <label for="">Password</label>
-                    <input type="password" class="form-control" minlength="6" id="password-field" required>
-                </div>
-                <input type="checkbox" name="" id="checkbox-data" >
-                <label for="">Show password</label>
-                <script src="../jS/login.js"></script>
-                <a class="button-link" href="./dashboard.html">Log in</a>
-                <button class="form-links" id="fg-pass"><a href="forgotPassword.html">Forgot Password?</a></button>
-                <hr>
-                <p id="quest">Don't have an account?</p>
-                <button class="form-links"><a href="./signUp.html">Sign up</a></button>
-            </form>
+            <div class="signin-signup">
+                <form action="" method="post" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="form-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"  placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="log in" class="btn login-btn">
+                    <p class="social-text">Or sign in with platforms </p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+
+                <form action="" method="post" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="form-group">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text"  placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="email"  placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="Sign up" class="btn login-btn">
+                    <p class="social-text">Or sign up with platforms </p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
+
+        <div class="side-container">
+            <div class="side left-side">
+                <div class="content">
+                    <h3>New here?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                    sequi aliquam amet ratione aperiam?</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+
+            <div class="side right-side">
+                <div class="content">
+                    <h3>One of us?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                    sequi aliquam amet ratione aperiam?</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+        </div>
+    </Section>
+    <script src="../jS/login.js"></script>
 </body>
 </html>

@@ -4,213 +4,312 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/dashboard/style.css">
     <script src="https://kit.fontawesome.com/70af51efa9.js" crossorigin="anonymous"></script>
-
+    <title>PMA</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-     <main class="app-container">
-        <section class="main-dashboard">
-            <div class="functionalities">
-                <div class="light-mode">
-                    <span class="left-part"></span> 
-                    <span class="right-part"></span>
-                </div>
-                <ul>
-                    <li><a href="">overview</a></li>
-                    <li><a href="">Reports</a></li>
-                </ul>
-                <div class="search">
-                    <input type="text" placeholder="search..">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
+   <section class="container">
+    <aside>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="../images/angela.png" alt="">
+                <h2>PRO<span class="primary">MA</span> </h2>
             </div>
+            <div class="close" id="close-btn"><i class="fa-solid fa-x"></i></div>
+        </div>
 
-            <div class="service-section">
-                <h1 class="service-title">Main Dashboard</h1>
-                <div class="service-dropdown">Manage <button><i class="fa-solid fa-chevron-down"></i></button></i></div>
-            </div>
+        <div class="side-bar">
+            <a href="#" class="active">
+                <span class="side-bar-icons" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M.99 5.24A2.25 2.25 0 013.25 3h13.5A2.25 2.25 0 0119 5.25l.01 9.5A2.25 2.25 0 0116.76 17H3.26A2.267 2.267 0 011 14.74l-.01-9.5zm8.26 9.52v-.625a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75v.615c0 .414.336.75.75.75h5.373a.75.75 0 00.627-.74zm1.5 0a.75.75 0 00.627.74h5.373a.75.75 0 00.75-.75v-.615a.75.75 0 00-.75-.75H11.5a.75.75 0 00-.75.75v.625zm6.75-3.63v-.625a.75.75 0 00-.75-.75H11.5a.75.75 0 00-.75.75v.625c0 .414.336.75.75.75h5.25a.75.75 0 00.75-.75zm-8.25 0v-.625a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75v.625c0 .414.336.75.75.75H8.5a.75.75 0 00.75-.75zM17.5 7.5v-.625a.75.75 0 00-.75-.75H11.5a.75.75 0 00-.75.75V7.5c0 .414.336.75.75.75h5.25a.75.75 0 00.75-.75zm-8.25 0v-.625a.75.75 0 00-.75-.75H3.25a.75.75 0 00-.75.75V7.5c0 .414.336.75.75.75H8.5a.75.75 0 00.75-.75z" clip-rule="evenodd" />
+                  </svg>
+                  </span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-solid fa-user"></i></span>
+                <h3>Project holders</h3>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-sharp fa-solid fa-diagram-project"></i></span>
+                <h3>Analytics</h3>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-solid fa-envelope"></i></span>
+                <h3>Messages</h3>
+                <span class="msg-count">13</span>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-sharp fa-solid fa-diagram-project"></i></span>
+                <h3>Project</h3>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-solid fa-gear"></i></span>
+                <h3>Settings</h3>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-solid fa-plus"></i></span>
+                <h3>Add Project</h3>
+            </a>
+            <a href="#">
+                <span class="side-bar-icons"><i class="fa-solid fa-right-from-bracket"></i></span>
+                <h3>Log out</h3>
+            </a>
+        </div>
+    </aside>
 
-            <div class="service-menu-bar">
-                <a href="#">Booking</a><a href="#">Amenities</a><a href="#">Customization</a><a href="#">Locality</a>
-            </div>
+    <!-- end of aside -->
 
-            <div class="service-features">
-                <div class="service-feature-one">
-                    <div class="statistics">
-                        <div class="earnings">
-                            <h5>Today's earnings</h5>
-                            <h4>$2890</h4>
-                        </div>
-                        <div class="demographics">
-                            <h5>Demographics</h5>
-                            <h1>20</h1>
-                        </div>
+    <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+            <input type="date">
+        </div>
+        <div class="insights">
+            <div class="service bookings">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                  </svg>
+                  </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total projects</h3>
+                        <h1>206,059</h1>
                     </div>
-                    <div class="discount">
-                        <div class="discount-text">
-                            <h3><strong>20%</strong> OFF</h3>
-                            <h5>On your first booking</h5>
-                            <button>NEWBIE20</button>
-                            <P>COPY CODE</P>
-                        </div>
-                        <div class="discount-img">
-                            <img src="../images/partnership.png" alt="partnership-image">
-                        </div>
-                    </div>
-                </div>
-                <div class="service-feature-two">
-                    <!-- <img src="../images/building.png" alt="building-image"> -->
-                </div>
-                <div class="service-feature-three">
-                    <div class="todays-activities">
-                        <div class="earnings">
-                            <h5>Today's earnings</h5>
-                            <h4>$2890</h4>
-                        </div>
-                        <div class="earnings">
-                            <h5>Today's bookings</h5>
-                            <h4>24</h4>
-                        </div>
-                        <div class="earnings">
-                            <h5>Total balance</h5>
-                            <h4>$2M</h4>
-                        </div>
-                    </div>
-                    <div class="meetings">
-                        <h3>Design Meetings</h3>
-                        <p>11 Min Left</p>
-                        <div class="meeting-images">
-                            <div class="left-meet-img">
-                               <img src="../images/angela.png" alt="">
-                                <button class="num-btn">08</button>
-                            </div>
-                            <div class="right-meet-img">
-                                <button>arr</button>
-                            </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="28" cy="29" r="26"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
                         </div>
                     </div>
                 </div>
+                <small class="muted-text">last 48 hours</small>
             </div>
+            <!-- end of bookings -->
 
-            <div class="service-section">
-                <h1 class="service-title">Active Bookings</h1>
-                <div class="service-dropdown">Check all <button><i class="fa-solid fa-chevron-down"></i></button></div>
-            </div>
-            <div class="current-projects">
-                <div class="booking-one">
-                    <div class="book-head">
-                        <h3><strong>Award Ceremony</strong></h3>
-                        <div class="dark-mode"></div>
+            <div class=" service expenses">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                  </svg>
+                  </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Expense</h3>
+                        <h1>$20,304</h1>
                     </div>
-                    <p> 12:30 - 15:45</p>
-                    <button class="team">Team</button> <button class="Meeting">Meeting</button>
-                    <div class="partakers">
-                        <div class="holders">
-                            <img src="" alt=""> <img src="" alt=""> <button class="holder-button">+9</button>
-                        </div>
-                        <div class="more-features">
-                            <button>icon</button> <button>icon</button>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="28" cy="29" r="26"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>71%</p>
                         </div>
                     </div>
                 </div>
-                <div class="booking-two">
-                    <div class="book-head">
-                        <h3><strong>Design Discussion</strong></h3>
-                        <div class="dark-mode"></div>
+                <small class="muted-text">last 48 hours</small>
+            </div>
+            <!-- end of expenses -->
+            <div class="service income">
+                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total income</h3>
+                        <h1>$30,790</h1>
                     </div>
-                    <p> 16:30 - 20:00</p>
-                    <button class="team">Team</button> <button class="Meeting">Meeting</button>
-                    <div class="partakers">
-                        <div class="holders">
-                            <img src="" alt=""> <img src="" alt=""> <button class="holder-button">+9</button>
-                        </div>
-                        <div class="more-features">
-                            <button>icon<i class="fa-solid fa-square-arrow-up-right"></i></button> <button>icon<i class="fa-solid fa-pen"></i></button>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="28" cy="29" r="26"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>51%</p>
                         </div>
                     </div>
                 </div>
-            </div> 
-        </section>
-        <section class="time-board">
-            <div class="info-section">
-                <div class="notifications">
-                    <button><i class="fa-regular fa-envelope"></i></button>
-                    <button><i class="fa-solid fa-bell" ></i></button>
+                <small class="muted-text">last 48 hours</small>
+            </div>
+        </div>
+        <!-- end of insights -->
+        <div class="recent-projects">
+            <h2>Recent Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Project Number</th>
+                        <th>Project Duration</th>
+                        <th>Project Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kamer Agencies</td>
+                        <td>234</td>
+                        <td>1 month</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Kamer Agencies</td>
+                        <td>234</td>
+                        <td>1 month</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Kamer Agencies</td>
+                        <td>234</td>
+                        <td>1 month</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Kamer Agencies</td>
+                        <td>234</td>
+                        <td>1 month</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Kamer Agencies</td>
+                        <td>234</td>
+                        <td>1 month</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <a href="#">Show All</a>
+        </div>
+    </main>
+<!-- end of main -->
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                  </svg>
+                  </span>
+            </button>
+            <div class="theme-toggler">
+                <span class="active"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path d="M10 2a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 2zM10 15a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 15zM10 7a3 3 0 100 6 3 3 0 000-6zM15.657 5.404a.75.75 0 10-1.06-1.06l-1.061 1.06a.75.75 0 001.06 1.06l1.06-1.06zM6.464 14.596a.75.75 0 10-1.06-1.06l-1.06 1.06a.75.75 0 001.06 1.06l1.06-1.06zM18 10a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0118 10zM5 10a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 015 10zM14.596 15.657a.75.75 0 001.06-1.06l-1.06-1.061a.75.75 0 10-1.06 1.06l1.06 1.06zM5.404 6.464a.75.75 0 001.06-1.06l-1.06-1.06a.75.75 0 10-1.061 1.06l1.06 1.06z" />
+                  </svg>
+                  </span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M7.455 2.004a.75.75 0 01.26.77 7 7 0 009.958 7.967.75.75 0 011.067.853A8.5 8.5 0 116.647 1.921a.75.75 0 01.808.083z" clip-rule="evenodd" />
+                  </svg>
+                  </span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p>Hey, <b>Billy</b></p>
+                    <small class="muted-text">Admin</small>
                 </div>
-                <div class="admin-info">
-                   <div class="admin-name">
-                     <h4>Thomas Gespan</h4>
-                     <p style="float: right;">Super Admin</p>
-                   </div>
-                    <div class="profile"><img src="../images/angela.png" alt="Angela-img"></div>
+                <div class="profile-photo">
+                    <img src="../images/angela.png" alt="">
                 </div>
             </div>
-            <hr>
-            <div class="day-detail">
-                <p><strong>Jan, 21</strong> Tuesday</p>
-                <div>
-                    <button><i class="fa-solid fa-chevron-left"></i></button>
-                    <button><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <!-- end of top -->
+        <div class="recent-updates">
+            <h2>Recent Updates</h2>
+            <div class="updates">
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="../images/dan-freeman-wAn4RfmXtxU-unsplash.jpg" alt="">
+                    </div>
+                    <div class="message">
+                        <p><b>Imbia Ngwa</b>, completed his task on project 231</p>
+                        <small class="muted-text">5 munites ago</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="../images/thomas-lefebvre-V63oM8OPJSo-unsplash.jpg" alt="">
+                    </div>
+                    <div class="message">
+                        <p><b>Imbia Ngwa</b>, completed his task on project 231</p>
+                        <small class="muted-text">5 munites ago</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="../images/dan-freeman-wAn4RfmXtxU-unsplash.jpg" alt="">
+                    </div>
+                    <div class="message">
+                        <p><b>Imbia Ngwa</b>, completed his task on project 231</p>
+                        <small class="muted-text">5 munites ago</small>
+                    </div>
                 </div>
             </div>
-            <div class="calendar-proper">
-                <ul class="dates">
-                    <li>Sun</li><li>31</li><li>8</li><li>15</li><li>22</li><li>30</li>
-                </ul>
-                <ul class="dates">
-                    <li>Mon</li><li>1</li><li>9</li><li>16</li><li>23</li><li>31</li>
-                </ul>
-                <ul class="dates">
-                    <li>Tue</li><li>2</li><li>10</li><li>17</li><li>25</li><li>1</li>
-                </ul>
-                <ul class="dates">
-                    <li>Wed</li><li>3</li><li>11</li><li>18</li><li>26</li><li>2</li>
-                </ul>
-                <ul class="dates">
-                    <li>Thu</li><li>4</li><li>12</li><li>19</li><li>27</li><li>3</li>
-                </ul>
-                <ul class="dates">
-                    <li>Fri</li><li>5</li><li>13</li><li>20</li><li>28</li><li>4</li>
-                </ul>
-                <ul class="dates">
-                    <li>Sat</li><li>6</li><li>14</li><li>21</li><li>29</li><li>5</li>
-                </ul>
+        </div>
+        <!-- end recent updates -->
+        <div class="project-analytics">
+            <h2>Project Analytics</h2>
+            <div class="project completed">
+                <div class="icon">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      </span>
+                </div>
+                <div class="right-info">
+                    <div class="right-content">
+                        <h3>Completed Projects</h3>
+                        <small class="muted-text">Last 2 days</small>
+                    </div>
+                    <h5 class="success">90%</h5>
+                    <h3>2467</h3>
+                </div>
             </div>
-            <div class="activities-per-hour">
-                <div class="hour">8:00<i class="fa-solid fa-award"></i></div>
-                <div><hr></div>
+            <div class="project incompleted">
+                <div class="icon">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                      </svg>
+                      </span>
+                </div>
+                <div class="right-info">
+                    <div class="right-content">
+                        <h3>Inompleted Projects</h3>
+                        <small class="muted-text">Last 2 days</small>
+                    </div>
+                    <h5 class="danger">30%</h5>
+                    <h3>1467</h3>
+                </div>
             </div>
-            <div class="activities-per-hour">
-                <div class="hour">8:30 <i class="fa-solid fa-microphone"></i></div>
-                <div><hr></div>
+            <div class="project participants">
+                <div class="icon">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                      </svg>
+                      </span>
+                </div>
+                <div class="right-info">
+                    <div class="right-content">
+                        <h3>New Participants</h3>
+                        <small class="muted-text">Last 2 days</small>
+                    </div>
+                    <h5 class="success">+23%</h5>
+                    <h3>67</h3>
+                </div>
             </div>
-            <div class="activities-per-hour">
-                <div class="hour">9:00<i class="fa-regular fa-lightbulb"></i></div>
-                <div><hr></div>
+            <div class="project add-project">
+                <span><i class="fa-solid fa-plus"></i></span>
+                <h3>Add Project</h3>
             </div>
-            <div class="activities-per-hour">
-                <div class="hour">9:30</div>
-                <div><hr></div>
-            </div>
-            <div class="activities-per-hour">
-                <div class="hour">10:00</div>
-                <div><hr></div>
-            </div>
-            <div class="activities-per-hour">
-                <div class="hour">10:30</div>
-                <div><hr></div>
-            </div>
-            <div class="activities-per-hour">
-                <div class="hour">11:00</div>
-                <div><hr></div>
-            </div>
-            <div class="activities-per-hour">
-                <div class="hour">11:30</div>
-                <div><hr></div>
-            </div>
-        </section>
-    </main> 
+        </div>
+    </div>
+   </section>
+   <script src="../jS/projects.js"></script>
+    <script src="../jS/index.js"></script>
 </body>
 </html>
