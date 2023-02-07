@@ -1,0 +1,231 @@
+
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+
+    }
+    .popup .content{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 16px 16px rgba(132, 139, 200, 0.18);
+    width: 500px;
+    height: auto;
+    z-index: 2;
+    box-sizing: border-box;
+    
+
+
+    }
+    
+    .popup .closebtn{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+    }
+.popup.active .overlay{
+    display: block;
+}
+    .popup.active .content{
+        transition: all 100ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+        
+    }
+
+    #myform{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 3rem;
+gap: 1rem;
+margin-top: 1rem;
+    }
+    .mybtn{
+        background-color: #7380ec;
+        color: #fff;
+        border-radius: 10px;
+        padding: 1rem 3rem;
+    }
+    .mybtn2{
+        background-color: #ff7782;
+        color: #fff;
+        border-radius: 10px;
+        padding: .8rem 1.8rem;
+        transform: scale(.8);
+    }
+    #myform input{
+        padding: 1.5rem;
+        border: 1px solid rgb(156, 153, 153);
+        border-radius: 10px;
+        width: 100%;
+        color:rgb(39, 39, 39) ;
+    }
+    #myform input:focus{
+        border: none;
+        outline: 2px solid rgb(39, 39, 39);
+    }
+    
+    /* home section styles */
+   *{
+        list-style: none;
+        text-decoration: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        height: 85vh;
+        min-height:100%;
+        background:linear-gradient(0deg, rgba(52, 49, 50, 0.8), rgba(43, 41, 42, 0.8)), url(../images/marcel.jpg);
+        background-size:cover;
+        color: #fff;
+    }
+    .main-nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+
+    }
+    .container ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .logo{
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #7380ec;
+    }
+    li a{
+        color: #fff;
+        transform: scale(1.2);
+        font-weight: 700;
+    }
+    .activelink{
+        color: #7380ec;
+transform: scale(1.5);
+font-weight: 900;
+
+
+ 
+    }
+    li a:hover{
+        color: #7380ec;
+    }
+    .contact{
+border: 2px solid #7380ec;
+color: #7380ec;
+padding: 1rem 1.5rem;
+border-radius: 5px;
+transform: scale(.8);
+
+    }
+    .showcase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .connect-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    button a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+    }
+        .btn-1{
+            border: none;
+
+        background-color: #ffbb55;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        transform: scale(.8);
+    }
+    .btn-2{
+        border: none;
+
+        background-color: #ec7399;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        transform: scale(.8);
+    }
+    .showcase p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 50rem;
+        line-height: 1.5rem;
+    }
+    .grid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: -7rem;
+
+
+    }
+    .grid-card{
+        background-color: #150e2e;
+        color: #fff;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 10px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 32px 48px #3e3d3d;
+    }
+    @media screen and (max-width: 900px){
+        .contact,.logo{
+            display: none;
+        }
+
+.grid{
+    flex-direction: column;
+}
+.showcase{
+    width: auto;
+}
+
+
+    }
